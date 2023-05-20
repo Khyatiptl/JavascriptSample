@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+function add() 
+{
+	var a=prompt("Enter yor values");
+	var b=prompt("Enter yor values");
+	alert(a+b);
+	document.writeln(a+b);
+	var c=Number(a);
+	var d=Number(b);
+	alert(c+d);
+	document.writeln(c+d);
+}
+function check1() {
+	var a = document.getElementById("text1").value;
+	var b = document.getElementById("text2").value;
+	var c = Number(a);
+	var d = Number(b);
+	alert(c+d);
+}
+function check2() {
+	var a = document.getElementById("text1").value;
+	var b = document.getElementById("text2").value;
+	var c = Number(a);
+	var d = Number(b);
+	alert(c*d);
+	
+}
+function check3() {
+	var a = document.getElementById("text1").value;
+	var b = document.getElementById("text2").value;
+	var c = Number(a);
+	var d = Number(b);
+	alert(c/d);
+	
+}
+function check4() {
+	var a = document.getElementById("text1").value;
+	var b = document.getElementById("text2").value;
+	var c = Number(a);
+	var d = Number(b);
+	alert(c-d);
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<input type ="text" name ="t1" id="text1">
+<input type ="text" name ="t2" id="text2">
+<input type = "button" value ="add" onclick = "check1()">
+<input type = "button" value ="sub" onclick = "check4()">
+<input type = "button" value ="mul" onclick = "check2()">
+<input type = "button" value ="div" onclick = "check3()">
+</form>
+
+
+<input type="button" value="CallAdd" onclick="add()"> 
+</body>
+</html>
